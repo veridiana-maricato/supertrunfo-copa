@@ -1,0 +1,224 @@
+@font-face {
+  font-family: "Showcard Gothic";
+  src: url("//db.onlinewebfonts.com/t/d66fa62dabed66f2226a1b2d17da0579.eot");
+  src: url("//db.onlinewebfonts.com/t/d66fa62dabed66f2226a1b2d17da0579.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/d66fa62dabed66f2226a1b2d17da0579.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/d66fa62dabed66f2226a1b2d17da0579.woff") format("woff"), url("//db.onlinewebfonts.com/t/d66fa62dabed66f2226a1b2d17da0579.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/d66fa62dabed66f2226a1b2d17da0579.svg#Showcard Gothic") format("svg"); }
+
+* {
+  box-sizing: border-box;
+  font-family: "Showcard Gothic"; }
+
+body {
+  height: auto;
+  margin: 0; }
+
+.logo {
+  text-align: center; }
+
+.logo img {
+  width: 300px; }
+
+.placar {
+  background: linear-gradient(30deg, #447116, #155404);
+  width: 200px;
+  border-radius: 30px;
+  height: 150px;
+  position: absolute;
+  top: -60px;
+  align-items: center;
+  text-align: left;
+  padding-left: 20px;
+  border: 1px solid red;
+  box-shadow: 1px 1px 5px black; }
+  .placar h3 {
+    text-align: center;
+    margin-left: -20px; }
+
+.quantidade-cartas {
+  position: absolute;
+  right: 10px;
+  top: -60px;
+  text-align: center;
+  border: 1px solid red;
+  box-shadow: 1px 1px 5px black;
+  background: linear-gradient(30deg, #447116, #155404);
+  border-radius: 30px;
+  padding: 10px; }
+
+.cartas {
+  display: flex;
+  gap: 70px;
+  justify-content: center;
+  align-items: center; }
+
+.carta-jogador, .carta-computador {
+  background-image: url("/img/campo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 430px;
+  width: 320px;
+  padding: 20px;
+  margin-bottom: 100px;
+  margin-top: 30px;
+  display: flex;
+  position: relative;
+  border: 2px solid black;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px black;
+  transition: all 200ms ease; }
+  .carta-jogador__foto, .carta-computador__foto {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 180px;
+    height: 170px;
+    position: absolute;
+    left: 50%;
+    top: 47px;
+    transform: translate(-50%, 0%);
+    border: 2px solid white; }
+
+.texto {
+  text-align: center;
+  position: absolute;
+  line-height: 40px;
+  bottom: 7%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  color: white;
+  display: flex;
+  flex-direction: column; }
+  .texto__computador {
+    text-align: center;
+    position: absolute;
+    line-height: 7px;
+    bottom: 7%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    line-height: 40px; }
+
+.atributo {
+  display: flex;
+  justify-content: space-between;
+  width: 150px; }
+  .atributo__computador {
+    text-align: left; }
+
+.nome-jogador {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  background-color: white;
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+  border: 2px solid black;
+  font-size: 20px; }
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 140px;
+  justify-content: center;
+  align-items: center; }
+
+.proxima-rodada {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px; }
+
+.button {
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 1px 1px 5px black;
+  border: 1px solid black; }
+
+.button:hover {
+  scale: 1.1;
+  transition: all 200ms ease-in-out;
+  cursor: pointer; }
+
+.button:disabled {
+  scale: 1;
+  cursor: auto; }
+
+#btnJogar {
+  text-align: center;
+  width: 200px;
+  font-size: 30px; }
+
+#btnSortear {
+  font-size: 20px; }
+
+#btnJogarNovamente {
+  left: 50%;
+  top: 30%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  text-align: center; }
+
+.resultado {
+  width: 2000px;
+  background-color: red;
+  z-index: 3;
+  transform: skew(20deg);
+  border-color: white;
+  max-height: 80px;
+  background: linear-gradient(#bd1212, #ffffff);
+  color: #000000;
+  font-size: 34px;
+  font-weight: bold;
+  box-shadow: 6px 6px 6px #0ff006;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  top: -250px;
+  transform: skewY(-16deg);
+  margin-left: -300px;
+  transition: all 200ms ease; }
+
+.hidden {
+  display: none;
+  transition: all 200ms ease; }
+
+.rodape {
+  background-color: #000;
+  text-align: center;
+  font-size: 12px;
+  color: white;
+  width: 100%;
+  font-family: 'Courier New', Courier, monospace; }
+
+.titulo {
+  text-align: center;
+  color: whitesmoke; }
+
+.container {
+  margin-left: 50px;
+  margin-right: 50px;
+  position: relative; }
+
+body {
+  background: linear-gradient(30deg, #186b3c, #5cfc1d); }
+
+header {
+  background-image: url("/img/bola-campo.webp");
+  background-position: right;
+  background-size: 1000px auto;
+  height: 500px;
+  margin-top: -60px;
+  margin-bottom: -60px; }
+  header h1 {
+    color: white;
+    font-size: 90px;
+    padding-top: 70px; }

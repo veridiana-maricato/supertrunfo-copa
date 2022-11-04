@@ -1,0 +1,25 @@
+.resultado{
+    width: 2000px;
+    background-color: red;
+    z-index: 3;
+    transform: skew(20deg);
+    border-color: white;
+    max-height: 80px;
+    background: linear-gradient(#bd1212, #ffffff);
+    color: #000000;
+    font-size: 34px;
+    font-weight: bold;
+    box-shadow: 6px 6px 6px #0ff006;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    top: -250px;
+    transform: skewY(-16deg);
+    margin-left: -300px;
+    transition: all 200ms ease;
+}
+
+.hidden{
+    display: none;
+    transition: all 200ms ease;
+}

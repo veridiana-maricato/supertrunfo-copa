@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Supertrunfo</title>
+</head>
+<body>
+    <header>       
+        <h1 class="titulo">Supertrunfo Copa 2022</h1>
+    </header>
+    <main class="supertrunfo">
+        <div class="container">
+            <div class="placar">              
+                <div class="texto-placar">
+                    <h3>Placar</h3>
+                    <h5 id="pontos-jogador"></h5>
+                    <h5 id="pontos-computador"></h5>
+                </div>
+            </div>
+            <div class="quantidade-cartas">
+                <h3 class="texto-quantidade-cartas">Cartas restantes: </h3>
+                <h4 id="quantidade-cartas"></h4>
+            </div>
+            <div class="buttons">
+                <button id="btnSortear" class="button" onclick="sortearCarta()">Sortear carta!</button>
+                <button id="btnJogar" class="button" onclick="jogar()" disabled="true">Jogar!</button>
+            </div>
+            <div class="cartas">
+                <div class="carta-jogador hidden">
+                    <div id="nome-jogador" class="nome-jogador">0</div>
+                    <div id="carta-jogador__foto" class="carta-jogador__foto"></div>                
+                    <div id="texto" class="texto">
+                        <!-- <div class="atributo">
+                            <label for="agilidade">Agilidade</label>
+                            <input name="atributo" type="radio" id="agilidade">                            
+                        </div>
+                        <div class="atributo">
+                            <label for="defesa">Defesa</label>
+                            <input name="atributo" type="radio" id="defesa">
+                        </div>
+                        <div class="atributo">
+                            <label for="ataque">Ataque</label>
+                            <input name="atributo" type="radio" id="ataque"> 
+                        </div>
+                         -->
+                    </div>
+                </div>
+                <div class="logo">
+                    <img src="/img/bola-dourada.png" alt="Bola de futebol dourada">
+                </div>                
+                <div class="carta-computador hidden">
+                    <div id="nome-computador" class="nome-jogador">Richarlison</div>
+                    <div id="carta-computador__foto" class="carta-computador__foto"></div>
+                    <div id="texto-computador" class="texto__computador">
+                        <!-- <div class="atributo__computador">
+                            <p>Agilidade</p>
+                        </div>
+                        <div class="atributo__computador">
+                            <p>Defesa</p>                        
+                        </div>
+                        <div class="atributo__computador">
+                            <p>Ataque</p>                        
+                        </div> -->                        
+                </div>
+            </div>
+        </div>
+        <div class="resultado hidden">
+            <h1 id="resultado">RESULTADO</h1>
+        </div>
+        <div class="jogar-novamente hidden">
+            <button class="button " id="btnJogarNovamente" onclick="jogarNovamente()">Jogar novamente!</button>
+        </div>
+        <div class="proxima-rodada">
+            <button class="button" id="btnProximaRodada" disabled="true" onclick="proximaRodada()">Proxima rodada!</button>
+        </div>
+    </main>
+    <footer>
+        <p class="rodape">© 2022 - Todos os direitos reservados - Veridiana Maricato</p>
+    </footer>
+    <script type="text/javascript" src="/js/supertrunfo.js"></script>
+</body>
+</html>

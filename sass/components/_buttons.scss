@@ -1,0 +1,60 @@
+.buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 140px;
+    justify-content: center;
+    align-items: center;
+}
+
+.proxima-rodada{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;   
+}
+
+.button{
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 1px 1px 5px black;
+    border: 1px solid black;
+}
+
+.button:hover{
+    scale: 1.1;
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+}
+
+
+.button:disabled{
+    scale: 1;
+    cursor: auto;
+}
+
+
+#btnJogar{
+    // position: absolute;
+    // top: 680px;
+    // left: 50%;
+    // transform: translate(-50%, 0%);
+    text-align: center;
+    width: 200px;
+    font-size: 30px;
+}
+
+#btnSortear{
+    font-size: 20px;
+}
+
+#btnJogarNovamente{
+    left: 50%;
+    top: 30%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    text-align: center;
+}

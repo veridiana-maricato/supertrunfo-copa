@@ -1,0 +1,30 @@
+.placar{
+    background:linear-gradient(30deg, rgb(68, 113, 22), rgb(21, 84, 4));
+    width: 200px;
+    border-radius: 30px;
+    height: 150px;
+    position: absolute;
+    top: -60px;
+    align-items: center;
+    text-align: left;
+    padding-left: 20px;
+    border: 1px solid red;
+    box-shadow: 1px 1px 5px black;
+
+    h3{
+        text-align: center;
+        margin-left: -20px;
+    }
+}
+
+.quantidade-cartas{
+    position: absolute;
+    right: 10px;
+    top: -60px;
+    text-align: center;
+    border: 1px solid red;
+    box-shadow: 1px 1px 5px black;
+    background:linear-gradient(30deg, rgb(68, 113, 22), rgb(21, 84, 4));
+    border-radius: 30px;
+    padding: 10px;
+}
